@@ -1,4 +1,4 @@
-# Event-Async-Linear-Filter
+# Event-Asynchronous-Filter
 
 ## Code and Data
 Coming soon
