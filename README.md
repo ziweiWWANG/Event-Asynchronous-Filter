@@ -12,7 +12,7 @@ Ziwei Wang, Yonhon Ng, Cedric Scheerlinck and Robert Mahony
 
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2023
 
-[[Paper](https://ieeexplore.ieee.org/abstract/document/10238826)] [[ArXiv](https://arxiv.org/pdf/2309.01159.pdf)] [[YouTube](https://www.youtube.com/watch?v=K1kRjw9xQNU)]
+[[Paper](https://ieeexplore.ieee.org/abstract/document/10238826)] [[PDF](https://arxiv.org/pdf/2309.01159.pdf)] [[YouTube](https://www.youtube.com/watch?v=K1kRjw9xQNU)]
 
 ## Citation
 If you use or discuss our asynchronous linear filter architecture or the Asynchronous Kalman Filter (AKF), please cite our paper as follows:
