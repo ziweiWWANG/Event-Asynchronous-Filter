@@ -8,4 +8,4 @@ reconstruction/*
 *.txt
 *.mat
 !cie_scotopic_lum.txt
-
+!figures/*
