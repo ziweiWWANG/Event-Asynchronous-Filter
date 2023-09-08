@@ -1,0 +1,11 @@
+# dataset folder
+data/*
+# reconstruction folder
+reconstruction/*
+# others
+*.m~
+*.png
+*.txt
+*.mat
+!cie_scotopic_lum.txt
+
