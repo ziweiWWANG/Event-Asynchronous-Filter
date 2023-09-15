@@ -5,7 +5,7 @@
 
 https://github.com/ziweiWWANG/Event-Asynchronous-Filter/assets/56065023/25f551bc-feaa-4db9-a643-6b64eb57d569
 
-
+Event cameras are ideally suited to capture High Dynamic Range (HDR) visual information without blur but provide poor imaging capability for static or slowly varying scenes. Conversely, conventional image sensors measure absolute intensity of slowly changing scenes effectively but do poorly on HDR or quickly changing scenes. In this paper, we present an asynchronous linear filter architecture, fusing event and frame camera data, for HDR video reconstruction and spatial convolution that exploits the advantages of both sensor modalities. The key idea is the introduction of a state that directly encodes the integrated or convolved image information and that is updated asynchronously as each event or each frame arrives from the camera. The state can be read-off as-often-as and whenever required to feed into subsequent vision modules for real-time robotic systems. Our experimental results are evaluated on both publicly available datasets with challenging lighting conditions and fast motions, along with a new dataset with HDR reference that we provide. The proposed AKF pipeline outperforms other state-of-the-art methods in both absolute intensity error (69.4% reduction) and image similarity indexes (average 35.5% improvement). We also demonstrate the integration of image convolution with linear spatial kernels Gaussian, Sobel, and Laplacian as an application of our architecture.
 
 
 Ziwei Wang, Yonhon Ng, Cedric Scheerlinck and Robert Mahony
