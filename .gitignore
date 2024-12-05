@@ -9,3 +9,4 @@ reconstruction/*
 *.mat
 !cie_scotopic_lum.txt
 !figures/*
+!code/eval/hdrvdp-3.0.6/*
