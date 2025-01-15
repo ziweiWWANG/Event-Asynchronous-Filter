@@ -112,7 +112,11 @@ Replace `{folder_name}` with the reconstruction folder you generated, such as `c
 The evaluation code `anal_hdr_results.m` loads groundtruth and reconstruction data from `./reconstruction/{folder_name}`, evaluates on SSIM, MSE, PSNR and HDRVDP metrics and then saves the average evaluation results to `./reconstruction/{folder_name}/results.txt` and saves the detailed evaluation results to `./reconstruction/{folder_name}/results_all.mat`.
 
 ### Our AHDR Hybrid Event-Frame Dataset
-
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=XPz7laloKws">
+    <img src="figures/ahdr-dataset.png" alt="Our AHDR Hybrid Event-Frame Dataset" width="700"/>
+  </a>
+</p>
 For our AHDR dataset, we apply an artificial camera
 response function to RGB camera output frames to simulate
 a low dynamic range camera. The resulting image noise covariance should be high for the ‘cropped’ intensity values. You can adjust `f_Q` if needed.
