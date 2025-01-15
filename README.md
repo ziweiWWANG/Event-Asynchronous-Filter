@@ -114,7 +114,7 @@ The evaluation code `anal_hdr_results.m` loads groundtruth and reconstruction da
 ### Our AHDR Hybrid Event-Frame Dataset
 <p align="center">
   <a href="https://www.youtube.com/watch?v=XPz7laloKws">
-    <img src="figures/ahdr-dataset.png" alt="Our AHDR Hybrid Event-Frame Dataset" width="700"/>
+    <img src="figures/ahdr-dataset_.png" alt="Our AHDR Hybrid Event-Frame Dataset" width="700"/>
   </a>
 </p>
 For our AHDR dataset, we apply an artificial camera
