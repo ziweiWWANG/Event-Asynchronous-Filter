@@ -111,6 +111,24 @@ eval_data = '{folder_name}'; anal_hdr_results(eval_data);
 Replace `{folder_name}` with the reconstruction folder you generated, such as `carpark2_akf`. 
 The evaluation code `anal_hdr_results.m` loads groundtruth and reconstruction data from `./reconstruction/{folder_name}`, evaluates on SSIM, MSE, PSNR and HDRVDP metrics and then saves the average evaluation results to `./reconstruction/{folder_name}/results.txt` and saves the detailed evaluation results to `./reconstruction/{folder_name}/results_all.mat`.
 
+### Our AHDR Hybrid Event-Frame Dataset
+
+For our AHDR dataset, we apply an artificial camera
+response function to RGB camera output frames to simulate
+a low dynamic range camera. The resulting image noise covariance should be high for the ‘cropped’ intensity values. You can adjust `f_Q` if needed.
+
+Download our mountain dataset, lake dataset, and artificial camera response functions `s_curve` here:
+[link](https://drive.google.com/drive/folders/1RXHQGjyit5vqO3l1LEl76XKh9MfkWwbn?usp=sharing). The datasets include raw events and SDR RGB images. Please feel free to use your own data here.
+
+Process SDR to LDR images:
+```
+cut_num = 80; # Choose from 30, 50, 80, 100, 115
+for i = 1:size(img_color,4)
+     load(['Path_to_s_curve/s_curve_' num2str(cut_num) '.mat']);
+     image(:,:,i) = s_curve(rgb2gray(img_color(:,:,:,i)) - 14);
+ end
+```
+
 
 ### Notes
 1. Make sure your event and image timestamps are well aligned.
