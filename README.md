@@ -99,6 +99,18 @@ The first row shows the low dynamic range frames, and the second row shows the h
 #### [Click Here To Download Raw Data](https://drive.google.com/drive/folders/1JYdvY2GqgD3RC-rczgf8t1JoIuBqoJvp?usp=sharing)
 Raw data includes raw events, HDR ground truth images, LDR images, exposure time, etc. This can be directly used for AKF.
 
+Example of loading a `.mat` file in Python
+```
+import h5py
+file_path = '../Downloads/tree3.mat'
+with h5py.File(file_path, 'r') as f:
+    events = f['events'][:] 
+    HDR_hdr_rgb = f['HDR_mat'][:]
+    image_ldr_bw = f['image'][:]
+    time_image = f['time_image'][:]
+```
+
+
 #### [Click Here To Download Event and Frame Pairs](https://drive.google.com/drive/folders/1fH7TurmZ68WQunNP4RfTUeeMOiD7RGfX?usp=sharing)
 For some methods that require event reconstruction and frame pairs, we provide reconstructed event data using the E2VID event reconstruction algorithm [[Rebecq et al., TPAMI 2019]](https://github.com/uzh-rpg/rpg_e2vid).
 
