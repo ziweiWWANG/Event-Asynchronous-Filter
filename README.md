@@ -99,7 +99,7 @@ The first row shows the low dynamic range frames, and the second row shows the h
 #### [Click Here To Download Raw Data](https://drive.google.com/drive/folders/1JYdvY2GqgD3RC-rczgf8t1JoIuBqoJvp?usp=sharing)
 Raw data includes raw events, HDR ground truth images, LDR images, exposure time, etc. This can be directly used for AKF.
 
-Example of loading a `.mat` file in Python
+Example of loading our HDR dataset in Python
 ```
 import h5py
 file_path = '../Downloads/tree3.mat'
